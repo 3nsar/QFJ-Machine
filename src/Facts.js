@@ -1,26 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import axios from "axios";
 
-const Fact = () => {
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': process.env.FACT_KEY,
-            'X-RapidAPI-Host': 'random-facts4.p.rapidapi.com'
-        }
-    };
-    const [data, setData] = useState(null)
-    useEffect(()=>{
-    fetch('https://random-facts4.p.rapidapi.com/get', options)
-        .then(response => response.json())
-        .then(apiData => setData(apiData[data].topic))
-        .catch(err => console.error(err));
+const Facts = () => {
 
+const[fact, setFact] = useState(null);
+
+const getFact= ()=>{
+
+const options = {
+  method: 'GET',
+  url: 'https://random-facts4.p.rapidapi.com/get',
+  headers: {
+    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
+    'X-RapidAPI-Host': 'random-facts4.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then((response) =>{
+	setFact(response.data[0].description)
+}).catch((error) =>{
+	console.error(error);
+},[])
+
+
+}
   return (
     <div>
-      <h1>{data}</h1>
+    <h1>{fact}</h1>
+    <button onClick={getFact}>Get a Fact!</button>
     </div>
   )
-})
 }
 
-export default Fact
+export default Facts
