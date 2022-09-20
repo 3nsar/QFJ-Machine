@@ -1,7 +1,7 @@
-import Facts from "./Facts";
-import Jokes from "./Jokes";
-import Quotes from "./Quotes";
-import Navbar from "./Navbar";
+import Facts from "./Components/Facts";
+import Jokes from "./Components/Jokes";
+import Quotes from "./Components/Quotes";
+import Navbar from "./Components/Navbar";
 import {BrowserRouter as Router, Routes,Route, Switch}from "react-router-dom"
 
 import React from 'react'

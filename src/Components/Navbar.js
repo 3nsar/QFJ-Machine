@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-// ADD COMPONENTS FOLDER!!!!!!
 const Navbar = () => {
   return (
     <div className='nav-container'>
