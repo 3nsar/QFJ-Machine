@@ -1,6 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Sans&family=Paytone+One&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body{
+ 
+}
+
+/*============= nav =================*/
+.nav-container{
+  background-color: #040303;
+  padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.nav-container ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-container li{
+  margin-left: 1rem;
+  font-size: 1.05rem;
+  font-family: fantasy;
+}
+
+.nav-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-container a:hover{
+  color: #5800FF;
+  transition: all 0.4s ease;
+}
+
+.title{
+  font-size: 2.2rem;
+  color: #5800FF;
+  font-family: "Paytone One";
+  
+}

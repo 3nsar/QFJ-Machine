@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className='nav-container'>
         <div className='nav-content'>
+          <h1 className='title'>QFJ-MACHINE</h1>
             <ul>
                 <li><Link to="/">Quotes</Link></li>
                 <li><Link to="/facts">Facts</Link></li>
