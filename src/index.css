@@ -8,6 +8,7 @@
 body{
   background-color: #070707;
   font-family: fantasy;
+  color: white;
 }
 
 /*============= nav =================*/
@@ -58,7 +59,6 @@ body{
 
 .home-container{
   margin: 0 auto;
-  border: 1px solid ridge;
 }
 
 .home-content{
@@ -89,7 +89,7 @@ body{
   margin-top: 2rem;
   background-color: #5800FF;
   border: none;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 20%;
   color: white;
   cursor: pointer;
@@ -174,3 +174,32 @@ img{
 }
 
 
+/*========== About =========*/
+
+.about-content{
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-title{
+  color: rgb(255, 0, 179);
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration-line: underline;
+  text-decoration-color: #5800FF;
+}
+
+.about-content p{
+  font-size: 1.5rem;
+}
+
+.about-pg{
+  border: 3px solid rgb(255, 0, 179);
+  padding: 1rem;
+  width: 50%;
+  margin-top: 3rem;
+}
