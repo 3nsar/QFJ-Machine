@@ -7,6 +7,7 @@
 
 body{
   background-color: #070707;
+  font-family: fantasy;
 }
 
 /*============= nav =================*/
@@ -53,7 +54,7 @@ body{
   font-family: "Paytone One";
 }
 
-/*============= main ==============*/
+/*============= home ==============*/
 
 .home-container{
   margin: 0 auto;
@@ -109,3 +110,58 @@ img{
   width: 500px;
   max-width: 100%;
 }
+
+/*======= QFJ-divs =======*/
+
+.qfj-content{
+  border: 2px solid blue;
+  color: #5800FF;
+  height: 18.75rem;
+  width: 95%;
+  background-color: rgb(18, 18, 18);
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.qfj-content p{
+  margin: 2rem 1rem 0 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qfj-content h2{
+  margin-top: 2rem;
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(255, 0, 179);
+  text-align: center;
+}
+
+.qfj-btn{
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.qfj-btn button{
+  background-color: #5800FF;
+  border: none;
+  padding: 1rem;
+  border-radius: 20%;
+  color: white;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.qfj-btn button:hover{
+  background-color: rgb(129, 129, 129);
+  transition: all 0.7s ease;
+}
+
+
+

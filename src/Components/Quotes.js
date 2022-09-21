@@ -27,10 +27,14 @@ axios.request(options).then((response)=> {
 }
 
   return (
-    <div>
-    <h1>{quote}</h1>
-    <h2>{author}</h2>
-    <button onClick={getQuote}>Get Quote</button>
+    <div className='qfj-container'>
+      <div className='qfj-content'>
+        <p>{quote}</p>
+        <h2>{author}</h2>
+        </div>
+        <div className='qfj-btn'>
+          <button onClick={getQuote}>Get Quote</button>
+        </div>
     </div>
   )
 }
