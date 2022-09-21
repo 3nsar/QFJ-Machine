@@ -23,10 +23,14 @@ axios.request(options).then((response)=> {
 });
 }
   return (
-    <div>
-        <h1>{joke}</h1>
+  <div className='qfj-container'>
+    <div className='qfj-content'>
+      <p>{joke}</p>
+      </div>
+      <div className='qfj-btn'>
         <button onClick={getJoke}>Get Joke</button>
-    </div>
+      </div>
+  </div>
   )
 }
 

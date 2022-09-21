@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import axios from "axios";
 
+
 const Quotes = () => {
 
 const[quote, setQuote] = useState(null)
-
 const[author, setAuthor] = useState(null)
+
 
 const getQuote = ()=>{
 
@@ -27,7 +28,7 @@ axios.request(options).then((response)=> {
 }
 
   return (
-    <div className='qfj-container'>
+    <div className='qfj-container'> 
       <div className='qfj-content'>
         <p>{quote}</p>
         <h2>{author}</h2>
