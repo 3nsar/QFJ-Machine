@@ -163,5 +163,14 @@ img{
   transition: all 0.7s ease;
 }
 
+/*======= loading ========*/
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem;
+}
 
 

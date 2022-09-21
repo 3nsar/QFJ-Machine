@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from "axios";
-
+import ClipLoader from "react-spinners/ScaleLoader";
 
 const Quotes = () => {
 
 const[quote, setQuote] = useState(null)
 const[author, setAuthor] = useState(null)
+const[loading, setLoading] = useState(false)
 
+useEffect(()=>{
+  getQuote()
+  },[])
 
 const getQuote = ()=>{
 
@@ -19,25 +23,35 @@ const options = {
   }
 };
 
+setLoading(true)
 axios.request(options).then((response)=> {
 	setQuote(response.data.content )
-    setAuthor(response.data.originator.name)
+  setAuthor(response.data.originator.name)
+  setLoading(false)
 }).catch((error) => {
 	console.error(error);
 });
 }
+return (
+  <div className='qfj-container'>
+    {
 
-  return (
-    <div className='qfj-container'> 
-      <div className='qfj-content'>
-        <p>{quote}</p>
-        <h2>{author}</h2>
+      loading ?(
+        <div className='loading'>
+          <ClipLoader color={"#5800FF"} loading={loading} size={150}/>
         </div>
-        <div className='qfj-btn'>
-          <button onClick={getQuote}>Get Quote</button>
-        </div>
-    </div>
-  )
-}
+      ):(
+        <div>
+    <div className='qfj-content'>
+      <p>{quote}</p>
+      <h2>{author}</h2>
+      </div>
+      <div className='qfj-btn'>
+        <button onClick={getQuote}>Get Joke</button>
+      </div>
+      </div>
+    )}
+  </div>
+) }
 
 export default Quotes
