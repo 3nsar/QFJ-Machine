@@ -6,9 +6,12 @@
 }
 
 body{
-  background-color: #070707;
+  background-color: #0f0f0f;
   font-family: fantasy;
   color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*============= nav =================*/
@@ -161,6 +164,7 @@ img{
   color: white;
   cursor: pointer;
   font-family: fantasy;
+  margin-bottom: 5rem;
 }
 
 .qfj-btn button:hover{
@@ -189,7 +193,7 @@ img{
   flex-direction: column;
 }
 
-#about-title{
+.about-title{
   color: rgb(255, 0, 179);
   padding: 1rem;
   text-align: center;
@@ -207,4 +211,36 @@ img{
   padding: 1rem;
   width: 50%;
   margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+/*========== footer =========*/
+
+.footer-container{
+  padding: 1rem;
+  margin-top: auto;
+  background-color: #040303;
+}
+
+.footer-container p{
+  color: gray;
+  font-size: 0.8rem;
+  text-align: center
+}
+
+.git-img{
+  width: 50px;
+  margin-right: 1.5rem;
+}
+
+.footer-title{
+  font-family:"Paytone One";
+  color:#5800FF;
+  margin-left: 1.5rem;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import About from './About'
+import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 
 
 const Home = () => {
   return (
+    
     <div className='home-container'>
         <div className='home-content'>
             <div className='home-text'>
@@ -18,7 +20,10 @@ const Home = () => {
             </div>
         </div>
         <About/>
+        <Footer />
     </div>
+  
+    
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import ClipLoader from "react-spinners/ScaleLoader";
+import Footer from './Footer';
 
 const Facts = () => {
 
@@ -49,6 +50,7 @@ axios.request(options).then((response) =>{
         <div className='qfj-btn'>
           <button onClick={getFact}>Get Fact</button>
         </div>
+        <Footer/>
         </div>
       )}
     </div>

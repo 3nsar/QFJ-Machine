@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import ClipLoader from "react-spinners/ScaleLoader";
+import Footer from './Footer';
 
 const Quotes = () => {
 
@@ -49,6 +50,7 @@ return (
       <div className='qfj-btn'>
         <button onClick={getQuote}>Get Joke</button>
       </div>
+      <Footer />
       </div>
     )}
   </div>
