@@ -12,6 +12,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 
 /*============= nav =================*/
@@ -20,6 +21,7 @@ body{
   padding: 1.5rem;
   max-width: 1440px;
   margin: 0 auto;
+  
 }
 
 .nav-content{
@@ -56,6 +58,32 @@ body{
   font-size: 2.2rem;
   color: #5800FF;
   font-family: "Paytone One";
+}
+
+.burger{
+  display: none;
+}
+
+.nav-content #hidden{
+  display: flex;
+}
+
+@media (max-width: 800px){
+  .burger{
+    display: flex;
+  }
+  .nav-container .nav-content ul{
+    display: none;
+  }
+  .nav-content #hidden{
+    position: absolute;
+    display: flex;
+
+    flex-direction: column;
+    height: 200px;
+    background-color: red;
+  }
+  
 }
 
 /*============= home ==============*/
