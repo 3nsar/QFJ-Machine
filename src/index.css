@@ -96,6 +96,11 @@ body{
   font-family: fantasy;
 }
 
+.home-text a{
+  color: white;
+  text-decoration: none;
+}
+
 .home-text button:hover{
   background-color: rgb(129, 129, 129);
   transition: all 0.7s ease;
@@ -114,7 +119,7 @@ img{
 /*======= QFJ-divs =======*/
 
 .qfj-content{
-  border: 2px solid #5800FF;
+  border: 3px solid #5800FF;
   color: #5800FF;
   height: 18.75rem;
   width: 95%;
@@ -184,13 +189,11 @@ img{
   flex-direction: column;
 }
 
-.about-title{
+#about-title{
   color: rgb(255, 0, 179);
   padding: 1rem;
   text-align: center;
   font-size: 3rem;
-  text-decoration-line: underline;
-  text-decoration-color: #5800FF;
 }
 
 .about-content p{
@@ -198,7 +201,9 @@ img{
 }
 
 .about-pg{
-  border: 3px solid rgb(255, 0, 179);
+  border: 3px solid;
+  border-image: linear-gradient(rgb(255, 0, 179),#5800FF);
+  border-image-slice: 1 ;
   padding: 1rem;
   width: 50%;
   margin-top: 3rem;
