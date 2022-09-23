@@ -50,7 +50,7 @@ return (
       <div className='qfj-btn'>
         <button onClick={getQuote}>Get Joke</button>
       </div>
-      <Footer />
+      
       </div>
     )}
   </div>

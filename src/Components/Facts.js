@@ -50,7 +50,7 @@ axios.request(options).then((response) =>{
         <div className='qfj-btn'>
           <button onClick={getFact}>Get Fact</button>
         </div>
-        <Footer/>
+      
         </div>
       )}
     </div>
