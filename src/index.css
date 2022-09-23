@@ -60,8 +60,16 @@ body{
   font-family: "Paytone One";
 }
 
+
 .burger{
   display: none;
+}
+.burger div{
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  
 }
 
 .nav-content #hidden{
@@ -71,7 +79,10 @@ body{
 @media (max-width: 800px){
   .burger{
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
+  
   .nav-container .nav-content ul{
     display: none;
   }

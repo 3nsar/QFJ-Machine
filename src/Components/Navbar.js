@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const[showLinks, setShowLinks]= useState(true);
+  const[showLinks, setShowLinks]= useState(false);
   return (
     <div className='nav-container'>
         <div className='nav-content'>
@@ -12,10 +12,14 @@ const Navbar = () => {
                 <li><Link to="/" onClick={()=> setShowLinks(!showLinks)}>Home</Link></li>
                 <li><a href="/#about" onClick={()=> setShowLinks(!showLinks)}>About</a></li>
                 <li><Link to="/quotes" onClick={()=> setShowLinks(!showLinks)}>Quotes</Link></li>
-                <li><Link to="/facts" onClick={()=> setShowLinks(!showLinks)}>Facts</Link></li>
+                <li><Link to="/facts" onClick={()=>  setShowLinks(!showLinks)}>Facts</Link></li>
                 <li><Link to="/jokes"  onClick={()=> setShowLinks(!showLinks)}>Jokes</Link></li>
             </ul>
-          <button className='burger' onClick={()=> setShowLinks(!showLinks)}>Open</button> 
+          <div className='burger' onClick={()=> setShowLinks(!showLinks)}>
+            <div className='line1'></div>
+            <div className='line2'></div>
+            <div className='line3'></div>
+          </div> 
         </div>
     </div>
   )
