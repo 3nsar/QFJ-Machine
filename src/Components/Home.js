@@ -1,6 +1,5 @@
 import React from 'react'
 import About from './About'
-import Footer from './Footer'
 import { Link } from 'react-router-dom'
 
 
