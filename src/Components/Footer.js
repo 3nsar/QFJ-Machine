@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='footer-content'>
             <h2 className='footer-title'>QFJ-MACHINE</h2>
             <p>©Copyright 2022, QFJ-MACHINE</p>
-            <img src="/images/git-pic.svg" alt="pic" className='git-img'/>
+            <a href="https://github.com/3nsar"><img src="/images/git-pic.svg" alt="github" className='git-img'/></a>
         </div>
     </div>
   )
