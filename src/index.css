@@ -306,3 +306,16 @@ img{
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 600px){
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-content p, img{
+    margin-top: 0.8rem;
+  }
+}
