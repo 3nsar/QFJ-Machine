@@ -9,7 +9,7 @@ const Navbar = () => {
           <h1 className='title'>QFJ-MACHINE</h1>
           
             <ul id={showLinks ? "hidden" : ""}>
-                <li><Link to="/" onClick={()=> setShowLinks(!showLinks)}>Home</Link></li>
+                <li><Link to="/#nav-container" onClick={()=> setShowLinks(!showLinks)}>Home</Link></li>
                 <li><a href="/#about" onClick={()=> setShowLinks(!showLinks)}>About</a></li>
                 <li><Link to="/quotes" onClick={()=> setShowLinks(!showLinks)}>Quotes</Link></li>
                 <li><Link to="/facts" onClick={()=>  setShowLinks(!showLinks)}>Facts</Link></li>

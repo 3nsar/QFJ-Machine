@@ -48,7 +48,7 @@ return (
       <h2>{author}</h2>
       </div>
       <div className='qfj-btn'>
-        <button onClick={getQuote}>Get Quote</button>
+        <button onClick={getQuote}>Get a Quote</button>
       </div>
       
       </div>

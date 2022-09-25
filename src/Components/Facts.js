@@ -48,7 +48,7 @@ axios.request(options).then((response) =>{
         <p>{fact}</p>
         </div>
         <div className='qfj-btn'>
-          <button onClick={getFact}>Get Fact</button>
+          <button onClick={getFact}>Get a Fact</button>
         </div>
       
         </div>

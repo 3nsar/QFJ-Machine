@@ -46,7 +46,7 @@ return (
       <p>{joke}</p>
       </div>
       <div className='qfj-btn'>
-        <button onClick={getJoke}>Get Joke</button>
+        <button onClick={getJoke}>Get a Joke</button>
       </div>
         
       </div>

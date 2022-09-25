@@ -24,6 +24,8 @@ body{
   padding: 1.5rem;
   max-width: 1440px;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
 }
 
 .nav-content{
@@ -108,7 +110,6 @@ body{
     text-decoration: underline;
     text-decoration-color: rgb(255, 0, 179);
     transition: all 0.4s ease;
-    
   }
   
 }
@@ -177,7 +178,6 @@ img{
 .qfj-container{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   height: 100vh;
 }
 
@@ -189,12 +189,12 @@ img{
   height: auto;
   width: 95%;
   background-color: rgb(18, 18, 18);
- margin: 0 auto;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .qfj-content p{
-  margin: 2rem 1rem 0 1rem;
+  margin: 2rem 1rem 2rem 1rem;
   color: white;
   display: flex;
   align-items: center;
@@ -237,11 +237,10 @@ img{
 /*======= loading ========*/
 
 .loading{
+  margin-top: 10rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 5rem;
+  justify-content: center;
 }
 
 
@@ -280,9 +279,9 @@ img{
 /*========== footer =========*/
 
 .footer-container{
-  border: 2px solid greenyellow;
   margin-top: auto;
   background-color: #040303;
+  padding: 1.5rem;
 }
 
 .footer-container p{
