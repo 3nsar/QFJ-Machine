@@ -11,6 +11,7 @@ import React from 'react'
 
 const App = () => {
   return (
+    
     <Router>
         <Navbar />
       <Routes>
@@ -19,9 +20,9 @@ const App = () => {
         <Route path="/jokes" element={<Jokes />}/>
         <Route path="/facts" element={<Facts />}/>
       </Routes>
-      <Footer />
+        <Footer />
     </Router>
-    
+ 
   )
 }
 
