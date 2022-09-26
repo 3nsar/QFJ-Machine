@@ -17,11 +17,7 @@ const getQuote = ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://quotes15.p.rapidapi.com/quotes/random/',
-  headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
-    'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
-  }
+  url: 'https://http://localhost:8000/quotes',
 };
 
 setLoading(true)

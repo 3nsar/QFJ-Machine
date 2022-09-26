@@ -16,11 +16,7 @@ const getFact= ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://random-facts4.p.rapidapi.com/get',
-  headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
-    'X-RapidAPI-Host': 'random-facts4.p.rapidapi.com'
-  }
+  url: 'https://localhost:8000/facts',
 };
 
 setLoading(true)

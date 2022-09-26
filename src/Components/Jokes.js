@@ -16,11 +16,7 @@ const getJoke = ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes',
-  headers: {
-    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
-    'X-RapidAPI-Host': 'jokes-by-api-ninjas.p.rapidapi.com'
-  }
+  url: 'https://http://localhost:8000/jokes',
 };
 
 setLoading(true)
