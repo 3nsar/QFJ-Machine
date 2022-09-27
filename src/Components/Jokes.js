@@ -16,7 +16,7 @@ const getJoke = ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://http://localhost:8000/jokes',
+  url: 'http://localhost:8000/jokes',
 };
 
 setLoading(true)

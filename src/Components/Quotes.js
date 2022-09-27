@@ -17,7 +17,7 @@ const getQuote = ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://http://localhost:8000/quotes',
+  url: 'http://localhost:8000/quotes',
 };
 
 setLoading(true)

@@ -47,10 +47,6 @@ app.get('/facts',(req,res)=>{
       
 })
 
-
-
-
-
 app.get('/jokes',(req,res)=>{
     const options = {
         method: 'GET',
