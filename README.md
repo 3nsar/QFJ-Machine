@@ -8,4 +8,4 @@ For the frontend I used the useState-hook to get the data from my backend and I 
 
 I created the backend with the help of Express and Node JS. The reason why I created also a backend was, to hide my API-Keys properly. 
 
-
+I also installed the React JS-Spinner to create the loading animation
