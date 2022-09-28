@@ -10,7 +10,7 @@ const Navbar = () => {
           
             <ul id={showLinks ? "hidden" : ""}>
                 <li><Link to="/#nav-container" onClick={()=> setShowLinks(!showLinks)}>Home</Link></li>
-                <li><a href="/#about" onClick={()=> setShowLinks(!showLinks)}>About</a></li>
+                <li><Link to="/#about" onClick={()=> setShowLinks(!showLinks)}>About</Link></li>
                 <li><Link to="/quotes" onClick={()=> setShowLinks(!showLinks)}>Quotes</Link></li>
                 <li><Link to="/facts" onClick={()=>  setShowLinks(!showLinks)}>Facts</Link></li>
                 <li><Link to="/jokes"  onClick={()=> setShowLinks(!showLinks)}>Jokes</Link></li>

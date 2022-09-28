@@ -19,8 +19,8 @@ app.get('/quotes',(req,res)=>{
         }
       };
       axios.request(options).then((response)=> {
-          res.json(response.data.content )
-        res.json(response.data.originator.name)
+          res.json(response.data)
+        //res.json(response.data.originator.name)
         
       }).catch((error) => {
           console.error(error);
@@ -40,7 +40,7 @@ app.get('/facts',(req,res)=>{
         }
       };
       axios.request(options).then((response) =>{
-          res.json(response.data[0].description)
+          res.json(response.data)
       }).catch((error) =>{
           console.error(error);
       },[])

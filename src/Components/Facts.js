@@ -16,7 +16,7 @@ const getFact= ()=>{
 
 const options = {
   method: 'GET',
-  url: 'https://localhost:8000/facts',
+  url: 'http://localhost:8000/facts',
 };
 
 setLoading(true)
